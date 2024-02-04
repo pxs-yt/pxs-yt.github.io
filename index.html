@@ -14,7 +14,7 @@
 
   gtag('config', 'G-WBT1C1JR2F');
 </script>
-    <script src="//pxs-yt.github.io/playerjs.js"></script>
+<script src="//pxs-yt.github.io/playerjs.js"></script>
 <body>
     <h3>Welcome to pxs-yt's official website!</h3> <br>
     <p>The purpose of this website is to publish coding projects created by PXS.</p>
@@ -22,6 +22,17 @@
     <div id="player"></div>
     <script>
         var player = new Playerjs({id:"player", file:"https://youtu.be/F2DhtFo_tgc?si=PhE62tvq3UnjdjhQ"});
+    </script>
+    <br><br><br>
+    <button id="YT">YouTube Channel</button>
+    <script>
+        document.getElementById("YT").onclick = function () {
+    location.href = "https://youtube.com/@PXS-YT"
+}
+    </script>
+    <br><br>
+    <script>
+        var player = new Playerjs({id:"player", file:[{"title":"YouTube as Free Storage (EXPERIMENT)","file":"https://youtu.be/0pNphQkYcTg?si=GiZNYAAMK-8-Wp31"},{"title":"Trying the BUCKSHOT ROULETTE Game for the FIRST TIME!","file":"https://youtu.be/hV1-XfQ1rjM?si=ASKqYHoXeqcfHSWY"},{"title":"PLAYING the WHOLE Tom Clancy's Ghost Recon Breakpoint Game - No Commentary","file":"https://youtu.be/CQE-osh3bqM?si=WiiVX4Z40gy2eYYf"}]});
     </script>
 </body>
 </html>
