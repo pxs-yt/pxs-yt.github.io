@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>pxs-yt</title>
 </head>
+
+
+
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-WBT1C1JR2F"></script>
 <script>
@@ -15,8 +18,19 @@
   gtag('config', 'G-WBT1C1JR2F');
 </script>
 <script src="//pxs-yt.github.io/playerjs.js"></script>
+<script src="index.js"></script>
+<link rel="stylesheet" type="text/css" href="style.css" />
+<!--Google Fonts integration (Protest Riot Regular, Rubik)-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap">
+
+
+
 <body>
-    <h3>Welcome to pxs-yt's official website!</h3> <br>
+    <h1>Welcome to pxs-yt's official website!</h1> <br>
     <p>The purpose of this website is to publish coding projects created by PXS.</p>
     <br><br><br><br>
     <div id="player"></div>
@@ -24,9 +38,11 @@
         var player = new Playerjs({id:"player", file:"https://youtu.be/0pNphQkYcTg?si=GiZNYAAMK-8-Wp31"});
     </script>
     <br><br><br>
-    <button id="YT">YouTube Channel</button>
+    <button type="button" class="main-button" id="main-button">
+        <span class="main-button-text">YouTube Channel</span>
+    </button>
     <script>
-        document.getElementById("YT").onclick = function () {
+        document.getElementById("main-button").onclick = function () {
     location.href = "https://youtube.com/@PXS-YT"
 }
     </script>
