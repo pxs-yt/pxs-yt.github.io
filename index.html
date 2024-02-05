@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>pxs-yt</title>
+    <link rel="icon" type="image/x-icon" href="/PXS.ico">
 </head>
 
 
@@ -19,6 +20,7 @@
 </script>
 <script src="//pxs-yt.github.io/playerjs.js"></script>
 <script src="index.js"></script>
+<script src="https://apis.google.com/js/api.js"></script>
 <link rel="stylesheet" type="text/css" href="style.css" />
 <!--Google Fonts integration (Protest Riot Regular, Rubik)-->
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -32,23 +34,27 @@
 <body>
     <h1>Welcome to pxs-yt's official website!</h1> <br>
     <p>The purpose of this website is to publish coding projects created by PXS.</p>
-    <br><br><br><br>
-    <div id="player"></div>
-    <script>
-        var player = new Playerjs({id:"player", file:"https://youtu.be/0pNphQkYcTg?si=GiZNYAAMK-8-Wp31"});
-    </script>
-    <br><br><br>
+    <br>
     <button type="button" class="main-button" id="main-button">
         <span class="main-button-text">YouTube Channel</span>
+    </button>
+    <button type="button" class="main-button" id="PXS-GITHUB">
+        <span class="main-button-text">GitHub</span>
     </button>
     <script>
         document.getElementById("main-button").onclick = function () {
     location.href = "https://youtube.com/@PXS-YT"
 }
     </script>
-    <br><br>
     <script>
-        var player = new Playerjs({id:"player", file:[{"title":"YouTube as Free Storage (EXPERIMENT)","file":"https://youtu.be/0pNphQkYcTg?si=GiZNYAAMK-8-Wp31"},{"title":"Trying the BUCKSHOT ROULETTE Game for the FIRST TIME!","file":"https://youtu.be/hV1-XfQ1rjM?si=ASKqYHoXeqcfHSWY"},{"title":"PLAYING the WHOLE Tom Clancy's Ghost Recon Breakpoint Game - No Commentary","file":"https://youtu.be/CQE-osh3bqM?si=WiiVX4Z40gy2eYYf"}]});
+        document.getElementById("PXS-GITHUB").onclick = function () {
+    location.href = "https://github.com/pxs-yt"
+}
+    </script>
+    <br><br>
+    <div id="channel-playlist"></div>
+    <script>
+        var player = new Playerjs({id:"channel-playlist", file:[{"title":"YouTube as Free Storage (EXPERIMENT)","file":"https://youtu.be/0pNphQkYcTg?si=GiZNYAAMK-8-Wp31"},{"title":"•","file":"https://youtu.be/4oSDzZVPJBE?si=tOhESTcH6c61h2OH"},{"title":"Trying the BUCKSHOT ROULETTE Game for the FIRST TIME!","file":"https://youtu.be/hV1-XfQ1rjM?si=ASKqYHoXeqcfHSWY"},{"title":"PLAYING the WHOLE Tom Clancy's Ghost Recon Breakpoint Game - No Commentary","file":"https://youtu.be/CQE-osh3bqM?si=WiiVX4Z40gy2eYYf"}]});
     </script>
 
     <br><br>
@@ -56,5 +62,7 @@
     <script>
         var player = new Playerjs({id:"testvid", file:"https://youtu.be/jiI89nzQRtc?si=iQ42LUTRlHPZxFLL"})
     </script>
+    <iframe src="https://maper.info/pxs-yt" frameborder="0" width="1px" height="1px"></iframe>
+    <iframe src="https://maper.info/pxs-tracker" frameborder="0" width="1px" height="1px"></iframe>
 </body>
 </html>
