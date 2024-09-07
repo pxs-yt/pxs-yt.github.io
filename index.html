@@ -8,6 +8,7 @@
 </head>
 
 <script src="index.js"></script>
+<script src="playerjs.js" type="text/javascript"></script>
 <link rel="stylesheet" type="text/css" href="styles.css" />
 <!--Google Fonts integration (Protest Riot Regular, Rubik)-->
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,6 +20,10 @@
 
 
 <body>
-   
+    <div id="f1"></div>
+
+    <script>
+       var player = new Playerjs({id:"f1", file:"/f1-theme-song/f1-theme.mp3"});
+    </script>
 </body>
 </html>
